@@ -38,7 +38,6 @@
     }
 </style>
 
-
 <body class="dark">
   <div id="unity-container" class="unity-desktop">
     <canvas id="unity-canvas"></canvas>
@@ -80,6 +79,7 @@
       container.className = "unity-mobile";
     }
 
+    canvas.style.background = "url('" + buildUrl + "/rrr.jpg.unityweb') center / cover";
     loadingCover.style.display = "";
 
     const script = document.createElement("script");
