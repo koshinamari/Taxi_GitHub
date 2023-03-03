@@ -29,11 +29,20 @@
 
 </head>
 
+<style>
+    body {
+        background-image: url('rere.png');
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+</style>
+
 <body class="dark">
   <div id="unity-container" class="unity-desktop">
     <canvas id="unity-canvas"></canvas>
   </div>
-  <div id="loading-cover"><img src="rere.png"></div>    
+  <div id="loading-cover" style="display:none;">
     <div id="unity-loading-bar">
       <div id="unity-label"></div>
       <div id="unity-logo"><img src="wewe.png"></div>
@@ -70,7 +79,6 @@
       container.className = "unity-mobile";
     }
 
-    canvas.style.background = "url('" + buildUrl + "/rrr.jpg.unityweb') center / cover";
     loadingCover.style.display = "";
 
     const script = document.createElement("script");
