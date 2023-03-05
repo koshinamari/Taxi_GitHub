@@ -59,14 +59,6 @@ body {
 
 #unity-progress-bar-empty {
 
-    position: absolute;
-    top: 90%;
-    left: 35%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: end;
-
     width: 30%;
     height: 15px;
     margin: 10px 20px 20px 10px;
