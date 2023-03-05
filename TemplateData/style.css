@@ -58,7 +58,7 @@ body {
 #unity-progress-bar-empty {
     width: 30%;
     height: 15px;
-    margin: 10px 20px 20px 10px;
+    margin: 10px 20px -300px 10px;
     text-align: left;
     border: 1px solid black;
     padding: 2px;
@@ -67,7 +67,7 @@ body {
 #unity-progress-bar-full {
     width: 0%;
     height: 100%;
-    background: #ffff00;
+    background: #eadf33;
 }
 
 .light #unity-progress-bar-empty {
@@ -80,10 +80,11 @@ body {
 
 #unity-label {
     position: relative;
-    top: 230px;
+    top: 100px;
     font-size: 35px;
     text-align: center;
-    font-family: sans-serif, calibri;
+    font-family: lilita one, bold;
+    color: #eadf33;
 }
 
 .spinner,
