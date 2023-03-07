@@ -54,7 +54,7 @@ body {
 }
 
 #unity-logo img {
-    max-width: 60%;
+    max-width: 40%;
 }
 
 #unity-progress-bar-empty {
@@ -92,9 +92,9 @@ body {
     justify-content: center;
     align-items: end;
     
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
-    font-family:'Lilita One', cursive;
+    font-family:'Lilita One', serif;
     color: #eadf33;
         
 }
