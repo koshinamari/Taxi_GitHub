@@ -55,14 +55,13 @@
 
   <script>
 
-    const userLanguage = navigator.language || navigator.userLanguage;
     let logoSrc = "logo_en.png";
-    if (userLanguage.startsWith("es")) {
-        logoSrc = "logo_es.png";
-    } else if (userLanguage.startsWith("ru")) {
-        logoSrc = "logo_ru.png";
+    if (navigator.language.startsWith("es")) {
+    logoSrc = "logo_es.png";
+    } else if (navigator.language.startsWith("ru")) {
+    logoSrc = "logo_ru.png";
     } else{
-        logoSrc = "logo_en.png";
+    logoSrc = "logo_en.png";
     }
 
     // set logo source
