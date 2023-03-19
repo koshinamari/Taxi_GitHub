@@ -56,12 +56,12 @@
   <script>
 
     let logoSrc = "logo_en.png";
-    if (navigator.language.startsWith("es")) {
-    logoSrc = "logo_es.png";
-    } else if (navigator.language.startsWith("ru")) {
-    logoSrc = "logo_ru.png";
+    if (Application.systemLanguage == SystemLanguage.Spanish) {
+        logoSrc = "logo_es.png";
+    } else if (Application.systemLanguage == SystemLanguage.Russian) {
+        logoSrc = "logo_ru.png";
     } else{
-    logoSrc = "logo_en.png";
+        logoSrc = "logo_en.png";
     }
 
     // set logo source
