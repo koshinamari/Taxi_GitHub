@@ -54,6 +54,20 @@
   </div>
 
   <script>
+    
+    var logoSrc = "logo_en.png";
+    if (Application.systemLanguage == SystemLanguage.Spanish) {
+    logoSrc = "logo_es.png";
+    } else if (Application.systemLanguage == SystemLanguage.Russian) {
+    logoSrc = "logo_ru.png";
+    } else{
+    logoSrc = "logo_en.png";
+    }
+
+    // set logo 
+    const unityLogo = document.querySelector("#unity-logo img");
+    unity-logo.src = logoSrc;
+
 
     const buildUrl = "Build";
     const loaderUrl = buildUrl + "/rrr.loader.js";
@@ -74,7 +88,8 @@
     const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
     const progressBarFull = document.querySelector("#unity-progress-bar-full");
     const fillText = document.querySelector("#unity-label");
-    const spinner = document.querySelector('.spinner');
+    const spinner = document.querySelector('.spinner');   
+
 
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
       container.className = "unity-mobile";
