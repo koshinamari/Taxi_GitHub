@@ -55,20 +55,6 @@
 
   <script>
     
-    var logoSrc = "logo_en.png";
-    if (Application.systemLanguage == SystemLanguage.Spanish) {
-    logoSrc = "logo_es.png";
-    } else if (Application.systemLanguage == SystemLanguage.Russian) {
-    logoSrc = "logo_ru.png";
-    } else{
-    logoSrc = "logo_en.png";
-    }
-
-    // set logo 
-    const unityLogo = document.querySelector("#unity-logo img");
-    unity-logo.src = logoSrc;
-
-
     const buildUrl = "Build";
     const loaderUrl = buildUrl + "/rrr.loader.js";
     const config = {
