@@ -16,6 +16,10 @@
     });
     window.onGSInit = async (gs) => {
 
+      const showPreloaderAd = "true";
+      if (showPreloaderAd) {
+        gs.ads.showPreloader();
+      }
 
       await _unityAwaiter.ready;
       window.GameScore = new GameScoreUnity(gs, unityI);
@@ -76,6 +80,18 @@
     const fillText = document.querySelector("#unity-label");
     const spinner = document.querySelector('.spinner');   
 
+    var userLang = navigator.language || navigator.userLanguage;
+    
+    // add logic to set correct logo depending on language
+    if (userLang.startsWith("ru")) {
+      logoSrc = "logo_ru.png";
+    } else if (userLang.startsWith("es")) {
+      logoSrc = "logo_es.png";
+    } else {
+      logoSrc = "logo_en.png";
+    }
+    const unityLogo = document.querySelector("#unity-logo img");
+    unityLogo.setAttribute("src", logoSrc);
 
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
       container.className = "unity-mobile";
