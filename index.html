@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Taxi_Webgl</title>
+  <title>Taxi - Take me Home</title>
   <link rel="stylesheet" href="TemplateData/style.css">
   <script src="TemplateData/gamescore-unity.js"></script>
   <script>
@@ -60,15 +60,15 @@
   <script>
     
     const buildUrl = "Build";
-    const loaderUrl = buildUrl + "/rrr.loader.js";
+    const loaderUrl = buildUrl + "/Web Build.loader.js";
     const config = {
-      dataUrl: buildUrl + "/rrr.data.unityweb",
-      frameworkUrl: buildUrl + "/rrr.framework.js.unityweb",
-      codeUrl: buildUrl + "/rrr.wasm.unityweb",
-        symbolsUrl: buildUrl + "/rrr.symbols.json.unityweb",
+      dataUrl: buildUrl + "/Web Build.data.unityweb",
+      frameworkUrl: buildUrl + "/Web Build.framework.js.unityweb",
+      codeUrl: buildUrl + "/Web Build.wasm.unityweb",
+        symbolsUrl: buildUrl + "/Web Build.symbols.json.unityweb",
       streamingAssetsUrl: "StreamingAssets",
-      companyName: "DefaultCompany",
-      productName: "Taxi_Webgl",
+      companyName: "LoveStotyHub",
+      productName: "Taxi - Take me Home",
       productVersion: "0.1.0",
     };
 
@@ -80,18 +80,7 @@
     const fillText = document.querySelector("#unity-label");
     const spinner = document.querySelector('.spinner');   
 
-    var userLang = navigator.language || navigator.userLanguage;
     
-    // add logic to set correct logo depending on language
-    if (userLang.startsWith("ru")) {
-      logoSrc = "logo_ru.png";
-    } else if (userLang.startsWith("es")) {
-      logoSrc = "logo_es.png";
-    } else {
-      logoSrc = "logo_en.png";
-    }
-    const unityLogo = document.querySelector("#unity-logo img");
-    unityLogo.setAttribute("src", logoSrc);
 
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
       container.className = "unity-mobile";
